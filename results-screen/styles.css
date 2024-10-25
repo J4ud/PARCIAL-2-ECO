@@ -1,0 +1,86 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #72c6ef 0%, #004e92 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#game-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+#players-list {
+  list-style: none; /* Quitar los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ocupar todo el ancho */
+  max-width: 400px; /* Máximo ancho de la lista */
+}
+
+#players-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#players-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+.bton{
+  background-color: rgba(0, 0, 0, 0.7);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: white;
+    
+}
